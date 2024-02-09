@@ -2,7 +2,6 @@ import math
 import json
 import numpy as np
 
-
 def calculate_r_squared(data, x, y):
     """
     Calculate R^2 value from Pearson's correlation coefficient for the 3rd and 4th values across all elements.
@@ -262,6 +261,10 @@ def calculate_modified_hhi(data):
 
     # print(json.dumps(matrix, indent=2))
 
+    relays_baseline = len(node_operators) / len(relays)
+    clients_baseline = len(node_operators) / len(clients)
+    operators_baseline = len(pool_names) / len(operators)
+
     for i in range(len(matrix)):
         row_correlation_value = 0.0
 
@@ -285,6 +288,11 @@ def calculate_modified_hhi(data):
                 operators_correlation += min(
                     matrix[i][4].get(operator, 0), matrix[j][4].get(operator, 0)
                 )
+
+            # comment out these lines to remove baseline correction
+            relays_correlation = relays_correlation - relays_baseline if relays_correlation > relays_baseline else 0
+            clients_correlation = clients_correlation - clients_baseline if clients_correlation > clients_baseline else 0
+            operators_correlation = operators_correlation - operators_baseline if operators_correlation > operators_baseline else 0
 
             c_ij = relays_correlation + clients_correlation + operators_correlation
 

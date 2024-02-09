@@ -1,12 +1,6 @@
 import math
 import json
 
-# TODO: calculate coefficient of variation for clients, relays and pools for each operator
-# then each row in the dataset will be operator, market_share, client_CV, relay_CV, pool_CV
-# then we can calculate the pearson correlation coefficient from this dataset
-# this can be used to measure correlation between market share and client diveristy, or relay diversity, or operator pools
-
-
 def calculate_r_squared(data, x, y):
     """
     Calculate R^2 value from Pearson's correlation coefficient for the 3rd and 4th values across all elements.
@@ -224,6 +218,9 @@ def calculate_modified_hhi(data):
     # Calculate HHI' value
     modified_hhi = 0.0
 
+    relays_baseline = len(node_operators) / len(relays)
+    clients_baseline = len(node_operators) / len(clients)
+
     for i in range(len(matrix)):
         row_correlation_value = 0.0
 
@@ -240,6 +237,10 @@ def calculate_modified_hhi(data):
 
             for clients in clients:
                 clients_correlation += min(matrix[i][3][client], matrix[j][3][client])
+
+            # comment out these lines to remove baseline correction
+            relays_correlation = relays_correlation - relays_baseline if relays_correlation > relays_baseline else 0
+            clients_correlation = clients_correlation - clients_baseline if clients_correlation > clients_baseline else 0
 
             c_ij = relays_correlation + clients_correlation
 
