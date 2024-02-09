@@ -258,6 +258,7 @@ def calculate_modified_hhi(data):
 
     # Calculate HHI' value
     modified_hhi = 0.0
+    s_hhi = 0.0
 
     # print(json.dumps(matrix, indent=2))
 
@@ -267,6 +268,7 @@ def calculate_modified_hhi(data):
 
     for i in range(len(matrix)):
         row_correlation_value = 0.0
+        shhi_value = 0.0
 
         for j in range(len(matrix)):
             n_i = matrix[i][1]  # market share of pool i
@@ -297,8 +299,12 @@ def calculate_modified_hhi(data):
             c_ij = relays_correlation + clients_correlation + operators_correlation
 
             row_correlation_value += ((n_i * n_j) * c_ij) * 100
+            shhi_value += (n_i + n_i) * c_ij
 
         modified_hhi += row_correlation_value
+        s_hhi += shhi_value
+
+    # print(s_hhi, standard_hhi, modified_hhi)
 
     return standard_hhi, modified_hhi
 
