@@ -35,7 +35,7 @@ def analyze_nodes():
 
 def analyze_nodes_with_validators():
     _, _, _, input_filename = get_filenames(data_folder, "armiarma_nodes")
-    analyze_data(input_filename, False)
+    analyze_data(input_filename, True, True)
 
 
 def analyze_nodes_HHI():

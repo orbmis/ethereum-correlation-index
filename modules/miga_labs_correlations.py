@@ -104,9 +104,9 @@ def get_hamming(df_full, attributes):
 
         n += 1
 
-    # iterate over array and add the sum of all "hamming weights as precentage of total records"
+    # iterate over array and add the sum of all "hamming weights as percentage of total records"
     for k in range(len(df) - 1):
-        matrix[k][5] = sum(matrix[k][1:5]) / len(df)
+        matrix[k][5] = sum(matrix[k][1:5]) # / len(df)
 
     return matrix
 
@@ -139,11 +139,11 @@ def calculate_correlation_index(filename):
             # Calculate the correlation factor rho_ij
             rho_ij = 1
             if data.loc[i, 'client_name'] == data.loc[j, 'client_name']:
-                rho_ij += 1
+                rho_ij += (1 / 3)
             if data.loc[i, 'country_code'] == data.loc[j, 'country_code']:
-                rho_ij += 1
+                rho_ij += (1 / 3)
             if data.loc[i, 'ISP_alias'] == data.loc[j, 'ISP_alias']:
-                rho_ij += 1
+                rho_ij += (1 / 3)
 
             # calculate respective market shares
             market_share_i = data.loc[i, 'validators_count'] / total_number_validators
@@ -155,11 +155,11 @@ def calculate_correlation_index(filename):
     # Multiply by 100 to get the final index
     correlation_index *= 100
 
-    print("Correlation Index:", correlation_index)
+    print("Correlation Index for nodes:", correlation_index)
 
     return correlation_index
 
-def analyze_data(file_path="data.csv", calculate_hamming_weights=True):
+def analyze_data(file_path="data.csv", calculate_hamming_weights=True, use_alternative_attributes=False):
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
 
@@ -200,6 +200,9 @@ def analyze_data(file_path="data.csv", calculate_hamming_weights=True):
 
     attributes_to_compare = ["country_code", "client_name", "isp_alias", "att_subnets"]
 
+    if use_alternative_attributes:
+        attributes_to_compare = ["validators_count","client_name","country_code","ISP_alias"]
+
     print("Calculating Hamming weights across each attribute . . .\n")
 
     resulting_hamming_weights = get_hamming(df, attributes_to_compare)
@@ -207,7 +210,8 @@ def analyze_data(file_path="data.csv", calculate_hamming_weights=True):
     hamming_csv = array_to_csv_string(resulting_hamming_weights)
 
     # Print or use resulting_hamming_weights as needed
-    # print(hamming_csv)
+    if use_alternative_attributes:
+        # print(hamming_csv)
 
     print("\n")
 
