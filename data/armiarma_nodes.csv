@@ -1,0 +1,488 @@
+index,validators_count,client_name,country_code,ISP_alias
+0,1,nimbus,KR,SK Broadband Co Ltd
+1,1,lighthouse,US,Verizon Business
+2,1,teku,AU,SUPERLOOP (AUSTRALIA) PTY LTD
+3,1,teku,US,Charter Communications Inc
+4,1,nimbus,US,Charter Communications Inc
+5,1,lighthouse,US,AT&T Services Inc.
+6,1,lighthouse,US,AT&T Services Inc.
+7,1,lighthouse,US,AT&T Services Inc.
+8,1,prysm,US,AT&T Services Inc.
+9,1,lighthouse,US,Verizon Communications
+10,1,prysm,AU,Telstra Corporation Limited
+11,1,lighthouse,SG,Singapore Telecommunications Ltd Magix Services
+12,1,lighthouse,AU,Aussie Broadband
+13,1,lighthouse,KR,Korea Telecom
+14,1,prysm,US,Grande Communications Networks
+15,1,lighthouse,US,Webpass Inc.
+16,1,lighthouse,SG,M1 LIMITED
+17,1,lighthouse,NL,TMONL
+18,1,lighthouse,AU,Telstra Corporation Limited
+19,1,lighthouse,AU,Telstra Corporation Limited
+20,1,lighthouse,AU,Aussie Broadband
+21,1,prysm,AU,Aussie Broadband
+22,1,prysm,FR,OVH SAS
+23,1,lodestar,DE,Contabo GmbH
+24,1,prysm,US,Charter Communications
+25,1,nimbus,CA,TELUS Communications Inc.
+26,1,nimbus,CA,TELUS Communications Inc.
+27,1,nimbus,US,Verizon Business
+28,1,prysm,US,Comcast Cable Communications LLC
+29,1,prysm,FR,BOUYGUES Telecom
+30,1,prysm,FR,BOUYGUES Telecom
+31,1,prysm,DE,Contabo GmbH
+32,1,teku,CH,Swisscom (Schweiz) AG - Bluewin
+33,1,prysm,DE,Vodafone
+34,1,prysm,DE,Vodafone
+35,1,lighthouse,RS,TELEKOM-BB
+36,1,prysm,RS,TELEKOM-BB
+37,1,lighthouse,DE,netcup GmbH
+38,1,teku,PT,Vodafone Portugal
+39,1,prysm,SG,Huawei International Pte. LTD
+40,1,lighthouse,CH,Sunrise GmbH
+41,1,lighthouse,DE,netcup GmbH
+42,1,teku,CH,DECKPOINT
+43,1,lighthouse,CH,ImproWare AG
+44,1,prysm,SE,Telia Company AB
+45,1,prysm,IT,Aruba S.p.A.
+46,1,prysm,IT,Aruba S.p.A.
+47,1,prysm,IT,Aruba S.p.A.
+48,1,prysm,IT,Aruba S.p.A.
+49,1,prysm,IT,Aruba S.p.A.
+50,1,prysm,IT,Aruba S.p.A.
+51,1,prysm,IT,Aruba S.p.A.
+52,1,nimbus,NL,ZIGGO
+53,1,nimbus,NL,ZIGGO
+54,1,lodestar,NL,ZIGGO
+55,1,lighthouse,AU,Vocus PTY LTD
+56,1,lighthouse,KR,SK Broadband Co Ltd
+57,1,prysm,SG,Singapore Telecommunications Ltd Magix Services
+58,1,lighthouse,AU,TPG Internet Pty Ltd
+59,1,prysm,NL,Vodafone Ziggo
+60,1,nimbus,SE,Bredband2 AB
+61,1,nimbus,SE,Bredband2 AB
+62,1,nimbus,SE,Bredband2 AB
+63,1,nimbus,SE,Bredband2 AB
+64,1,nimbus,SE,Bredband2 AB
+65,1,nimbus,SE,Bredband2 AB
+66,1,teku,NL,TMONL
+67,1,grandine,US,Charter Communications
+68,1,prysm,IL,013 Netvision
+69,1,lighthouse,CH,UPC Schweiz GmbH
+70,1,lighthouse,GB,Cerberus Networks Ltd
+71,1,prysm,US,Frontier Communications Corporation
+72,1,nimbus,US,Frontier Communications Solutions
+73,1,nimbus,US,Frontier Communications Solutions
+74,1,nimbus,US,Frontier Communications Solutions
+75,1,teku,DE,Vodafone
+76,1,nimbus,US,Wholesail networks LLC
+77,1,lighthouse,PL,OVH SAS
+78,1,lighthouse,IE,Amazon.com Inc.
+79,1,lighthouse,CA,OVH SAS
+80,1,prysm,ES,Ono
+81,1,prysm,AT,UPC Austria
+82,1,prysm,FI,Hetzner Online GmbH
+83,1,teku,US,CenturyLink Communications LLC
+84,1,nimbus,US,CenturyLink Communications LLC
+85,1,prysm,CA,TELUS Communications Inc
+86,1,prysm,US,Hurricane Electric LLC
+87,1,prysm,US,COMELEC SERVICES INC
+88,1,prysm,US,Comcast Cable Communications LLC
+89,1,prysm,US,Comcast Cable Communications LLC
+90,1,lighthouse,US,Ardmore Telephone
+91,1,nimbus,US,Cox Communications Inc.
+92,1,lighthouse,US,Comcast Cable Communications LLC
+93,1,prysm,US,Comcast Cable Communications LLC
+94,1,lighthouse,US,Verizon Business
+95,1,prysm,US,Charter Communications
+96,1,teku,US,Comcast Cable Communications LLC
+97,1,prysm,US,Comcast Cable Communications
+98,1,teku,US,Comcast Cable Communications LLC
+99,1,lighthouse,US,Fuse Internet Access
+100,1,prysm,US,Comcast Cable Communications LLC
+101,1,teku,US,Charter Communications
+102,1,prysm,NL,UPC NL
+103,1,lighthouse,CH,Genossenschaft GGA Maur
+104,1,nimbus,CH,Genossenschaft GGA Maur
+105,1,lighthouse,CH,Genossenschaft GGA Maur
+106,1,nimbus,CH,Genossenschaft GGA Maur
+107,1,grandine,AT,T-Mobile Austria GmbH
+108,1,grandine,FR,Orange
+109,1,lighthouse,CH,green.ch ag
+110,1,nimbus,CH,green.ch ag
+111,1,lighthouse,CH,green.ch ag
+112,1,prysm,CH,WWZ Telekom AG
+113,1,prysm,GB,Virgin Media
+114,1,nimbus,AT,Liberty Global Operations B.V
+115,1,nimbus,AT,Liberty Global Operations B.V
+116,1,lighthouse,DE,Contabo GmbH
+117,1,prysm,CZ,GINs network
+118,1,teku,RO,RCS & RDS
+119,1,prysm,AU,Launtel
+120,1,prysm,DE,Deutsche Telekom AG
+121,1,lighthouse,GB,TalkTalk
+122,1,lodestar,DE,Hetzner Online GmbH
+123,1,lodestar,DE,Hetzner Online GmbH
+124,1,prysm,NO,Telenor Norge
+125,1,prysm,NO,Telenor Norge
+126,1,prysm,DE,netcup GmbH
+127,1,prysm,DE,netcup GmbH
+128,1,nimbus,FR,Orange
+129,1,prysm,ES,Adamo Telecom Iberia S.A Barcelona
+130,1,prysm,ES,Adamo Telecom Iberia S.A.
+131,1,teku,ES,UNI2
+132,1,lighthouse,DE,QSC AG
+133,1,nimbus,DK,TDC Holding A/S
+134,1,teku,BE,Telenet N.V.
+135,1,lighthouse,BE,Telenet N.V.
+136,1,lighthouse,IT,Tiscali Italia SpA
+137,1,teku,RU,Lofis LLC
+138,1,teku,SK,Slovak Telecom AS6855
+139,1,prysm,DE,Vodafone Kabel Deutschland
+140,1,lighthouse,US,Charter Communications
+141,1,prysm,US,Verizon Communications
+142,1,prysm,US,Charter Communications Inc
+143,1,prysm,US,Comcast Cable Communications LLC
+144,1,teku,US,Comcast Cable Communications LLC
+145,1,teku,US,Comcast Cable Communications LLC
+146,1,prysm,US,Comcast Cable Communications LLC
+147,1,lighthouse,US,SpaceX Starlink
+148,1,prysm,US,AT&T Services Inc.
+149,1,lighthouse,CA,Rogers Communications Canada Inc.
+150,2,nimbus,US,Verizon Communications
+151,2,prysm,US,Verizon Business
+152,2,lighthouse,FI,Hetzner Online GmbH
+153,2,lighthouse,US,Webpass Inc.
+154,2,lighthouse,AU,Choopa
+155,2,prysm,SG,OVH SAS
+156,2,lighthouse,US,OVH US LLC
+157,2,teku,US,AT&T Services Inc.
+158,2,lighthouse,AU,Aussie Broadband
+159,2,prysm,PL,Krzysztof Andrzej Kozak trading as P.P.H.U. ARTUS
+160,2,prysm,DE,Hetzner Online GmbH
+161,2,teku,DK,TDC Holding A/S
+162,2,lighthouse,AU,TPG Internet Pty Ltd
+163,2,lighthouse,DE,Vodafone
+164,2,lighthouse,US,Charter Communications Inc
+165,2,prysm,US,Charter Communications
+166,2,lighthouse,US,AT&T Services Inc.
+167,2,prysm,CA,Bell Canada
+168,2,grandine,US,Comcast Cable Communications LLC
+169,2,prysm,US,Comcast Cable Communications
+170,2,prysm,US,Comcast Cable Communications LLC
+171,2,prysm,US,Comcast Cable Communications LLC
+172,2,prysm,US,Comcast Cable Communications LLC
+173,2,prysm,US,Comcast Cable Communications LLC
+174,2,prysm,US,Comcast Cable Communications LLC
+175,2,prysm,US,Comcast Cable Communications LLC
+176,2,prysm,US,Comcast Cable Communications LLC
+177,2,prysm,RU,Koltushsky Internet Ltd
+178,2,prysm,FR,France Telecom
+179,2,teku,NO,Altibox
+180,2,teku,NL,Euronet Communications B.V
+181,2,teku,SI,SIOL
+182,2,teku,SI,SIOL
+183,2,nimbus,NL,KPN B.V.
+184,2,lighthouse,GB,Hyperoptic Ltd
+185,2,lighthouse,NO,Altibox AS
+186,2,lighthouse,SI,T-2 d.o.o.
+187,2,lighthouse,DE,netcup GmbH
+188,2,prysm,DE,Hetzner Online AG
+189,2,lodestar,FR,Free SAS
+190,2,lighthouse,DE,Vodafone Kabel Deutschland
+191,2,prysm,US,Verizon Business
+192,2,lighthouse,US,AT&T Services Inc.
+193,2,lighthouse,CA,Rogers Communications Canada Inc.
+194,2,lighthouse,US,AT&T Services Inc.
+195,3,teku,US,AT&T Services Inc.
+196,3,teku,US,AT&T Services Inc.
+197,3,prysm,US,Verizon Business
+198,3,prysm,US,Verizon Business
+199,3,teku,CH,Init7 (Switzerland) Ltd.
+200,3,prysm,US,Verizon Business
+201,3,prysm,US,Verizon Business
+202,3,prysm,CH,Swisscom (Schweiz) AG
+203,3,lighthouse,US,OVH SAS
+204,3,nimbus,AU,Aussie Broadband
+205,3,lighthouse,AU,Aussie Broadband
+206,3,lighthouse,AU,Aussie Broadband
+207,3,teku,US,Aureon Network Services
+208,3,prysm,IT,Revolution Provider SRL
+209,3,teku,DE,Contabo GmbH
+210,3,lighthouse,FR,Online S.A.S.
+211,3,prysm,KR,Korea Telecom
+212,3,lighthouse,US,US Internet Corp
+213,3,prysm,US,RCN
+214,3,prysm,US,Cablevision Systems Corp.
+215,3,lodestar,CA,Cogeco Connexion inc
+216,3,prysm,HK,PCCW IMS Limited
+217,3,prysm,US,Wholesail networks LLC
+218,3,prysm,US,Wholesail networks LLC
+219,3,nimbus,US,Communications Design Acquisition Corporation
+220,3,lighthouse,CA,Beanfield Technologies Inc.
+221,3,teku,US,Cablevision Systems Corp.
+222,3,lighthouse,US,Burlington Telecom
+223,3,lighthouse,US,AT&T Services Inc.
+224,3,lighthouse,US,Comcast Cable Communications LLC
+225,3,prysm,LT,Telia Lietuva
+226,3,prysm,LT,Telia Lietuva
+227,3,lighthouse,BE,Proximus
+228,3,teku,NL,KPN B.V.
+229,3,lighthouse,NL,KPN B.V.
+230,3,nimbus,GB,Virgin Media Limited
+231,3,nimbus,GB,Virgin Media Limited
+232,3,nimbus,GB,Virgin Media Limited
+233,3,teku,AU,Launtel
+234,3,prysm,FR,Orange
+235,3,prysm,US,AT&T Services Inc.
+236,3,nimbus,US,AT&T Services Inc.
+237,3,nimbus,US,AT&T Services Inc.
+238,3,nimbus,US,AT&T Services Inc.
+239,3,nimbus,US,AT&T Services Inc.
+240,3,lighthouse,US,AT&T Services Inc.
+241,4,prysm,US,AT&T Services Inc.
+242,4,prysm,US,AT&T Services Inc.
+243,4,prysm,AU,Aussie Broadband
+244,4,prysm,AU,Aussie Broadband
+245,4,prysm,US,DigitalOcean LLC
+246,4,prysm,US,DigitalOcean LLC
+247,4,prysm,US,DigitalOcean LLC
+248,4,lighthouse,US,Clearwave Communications
+249,4,lighthouse,US,DigitalOcean LLC
+250,4,prysm,US,Longmont Power & Communications
+251,4,lighthouse,DE,netcup GmbH
+252,4,teku,GB,PlusNet Technologies Ltd
+253,4,prysm,RU,provider LIR RU.INECO
+254,4,prysm,KR,SK Broadband Co Ltd
+255,4,prysm,KR,SK Broadband Co Ltd
+256,4,prysm,US,AT&T Services Inc.
+257,4,prysm,US,AT&T Services Inc.
+258,4,prysm,US,Frontier Communications Solutions
+259,4,prysm,US,Wholesail networks LLC
+260,4,lighthouse,SG,OVH Hosting
+261,4,grandine,AT,UPC Technology
+262,4,lighthouse,US,Interserver Inc
+263,4,lighthouse,BG,ITD Network
+264,4,prysm,DE,Deutsche Telekom AG
+265,4,lighthouse,NL,Vodafone Ziggo
+266,4,lighthouse,NO,GLOBALCONNECT
+267,4,teku,PT,PT Comunicacoes S.A.
+268,4,lighthouse,QA,Ooredoo Q.S.C.
+269,4,lighthouse,FI,Elisa Oyj
+270,4,lighthouse,FI,Elisa Oyj
+271,4,teku,BE,Proximus
+272,4,teku,FR,Societe Francaise Du Radiotelephone - SFR SA
+273,5,lighthouse,KR,Korea Telecom
+274,5,lighthouse,DE,Altonetz GmbH
+275,5,lighthouse,CA,OVH SAS
+276,5,prysm,CA,OVH SAS
+277,5,prysm,NZ,Two Degrees Mobile Limited
+278,5,prysm,US,Cable ONE
+279,5,prysm,US,Cable ONE
+280,5,prysm,US,RCN
+281,5,lodestar,CA,Cogeco Connexion inc
+282,5,lodestar,CA,Cogeco Connexion inc
+283,5,prysm,GB,Virgin Media Limited
+284,5,prysm,SG,Starhub Internet Pte Ltd
+285,5,prysm,HK,PCCW IMS Limited
+286,5,lighthouse,US,Frontier Communications Solutions
+287,5,teku,US,Charter Communications
+288,5,prysm,US,Charter Communications
+289,5,lighthouse,US,Comcast Cable Communications LLC
+290,5,lighthouse,PL,Host4Biz sp. z o.o.
+291,5,teku,LV,LATTELEKOM
+292,5,teku,IE,Cork Internet Exchange Limited
+293,5,prysm,US,Verizon Business
+294,6,prysm,US,Verizon Business
+295,6,nimbus,US,Wave Broadband
+296,6,nimbus,US,Wave Broadband
+297,6,nimbus,US,Wave Broadband
+298,6,nimbus,US,Wave Broadband
+299,6,prysm,NL,WorldStream B.V.
+300,6,prysm,DE,netcup GmbH
+301,6,nimbus,BE,M247 Europe SRL
+302,6,prysm,US,Charter Communications
+303,6,nimbus,US,Charter Communications
+304,6,prysm,US,Charter Communications
+305,6,teku,AT,Nessus GmbH
+306,6,lodestar,AT,Nessus GmbH
+307,6,lighthouse,AT,Nessus GmbH
+308,6,teku,AT,Nessus GmbH
+309,6,prysm,CZ,Neutral Free eXchange members - FreeTel alternate
+310,7,prysm,US,Google Fiber Inc.
+311,7,teku,CA,Bell Canada
+312,7,prysm,DE,netcup GmbH
+313,7,prysm,ES,Xtra Telecom S.A
+314,7,prysm,ES,Xtra Telecom S.A
+315,7,nimbus,CA,Cogeco Communications Inc.
+316,7,lighthouse,CA,Cogeco Communications Inc.
+317,7,nimbus,CA,Cogeco Communications Inc.
+318,7,lighthouse,US,Amazon.com Inc.
+319,7,prysm,CA,Rogers Communications Canada Inc.
+320,8,prysm,KR,Korea Telecom
+321,8,prysm,KR,Korea Telecom
+322,8,lighthouse,US,Buckeye Cablevision Inc.
+323,8,prysm,US,Cablevision Systems Corp.
+324,8,lighthouse,US,OVH SAS
+325,8,nimbus,US,Comcast Cable Communications LLC
+326,8,nimbus,US,Comcast Cable Communications LLC
+327,8,lighthouse,US,Comcast Cable Communications
+328,8,prysm,US,Amazon.com Inc.
+329,8,lighthouse,US,AT&T Services Inc.
+330,8,teku,US,AT&T Services Inc.
+331,8,teku,IL,Partner Communications
+332,8,teku,IL,Partner Communications
+333,8,lighthouse,BE,VOO
+334,8,grandine,CZ,Telefonica O2 Czech Republic a.s.
+335,9,lighthouse,US,OVH SAS
+336,9,prysm,US,Charter Communications
+337,9,lighthouse,US,Comcast Cable Communications LLC
+338,9,prysm,DK,TDC Holding A/S
+339,9,lighthouse,SI,T-2 d.o.o.
+340,9,prysm,SI,T-2 d.o.o.
+341,10,lighthouse,US,Verizon Business
+342,10,lighthouse,US,Verizon Business
+343,10,prysm,CA,TELUS Communications Inc
+344,10,lodestar,FR,M247 Europe SRL
+345,10,prysm,SG,MYREPUBLIC
+346,10,prysm,SG,MYREPUBLIC
+347,10,prysm,SG,MYREPUBLIC
+348,10,prysm,SG,MYREPUBLIC
+349,10,prysm,US,Comcast Cable Communications LLC
+350,10,lighthouse,NL,Global Layer B.V.
+351,10,nimbus,NL,Global Layer B.V.
+352,10,lighthouse,KR,Korea Telecom
+353,10,lighthouse,KR,Korea Telecom
+354,10,teku,DE,netcup GmbH
+355,10,prysm,US,Frontier Communications Corporation
+356,10,prysm,US,Spectrum
+357,10,prysm,US,Spectrum
+358,10,prysm,DE,DigitalOcean LLC
+359,10,prysm,US,Cox Communications Inc.
+360,10,lighthouse,GB,Andrews & Arnold Ltd
+361,10,prysm,FI,Hetzner Online GmbH
+362,11,grandine,AU,SUPERLOOP (AUSTRALIA) PTY LTD
+363,11,grandine,AU,SUPERLOOP (AUSTRALIA) PTY LTD
+364,11,nimbus,US,Charter Communications
+365,11,lighthouse,SE,Bredband2 AB
+366,12,prysm,CA,Shaw Communications Inc.
+367,13,lodestar,SG,OVH SAS
+368,13,teku,SG,OVH SAS
+369,14,prysm,AU,Telstra Corporation Limited
+370,14,lighthouse,DE,Contabo GmbH
+371,14,lighthouse,DE,Vodafone Kabel Deutschland
+372,14,prysm,US,Riseup Networks
+373,14,lighthouse,DE,Deutsche Telekom AG
+374,15,lighthouse,KR,Korea Telecom
+375,15,prysm,KR,Korea Telecom
+376,15,prysm,KR,SK Broadband Co Ltd
+377,16,teku,AU,HostLink
+378,16,lighthouse,US,Google Fiber Inc.
+379,16,lighthouse,ZA,CISP Assignment2 SN1
+380,16,prysm,US,Gigsouth LLC
+381,16,prysm,US,Gigsouth LLC
+382,16,prysm,US,Namecheap Inc.
+383,16,prysm,DE,Vodafone Kabel Deutschland
+384,16,prysm,DE,Vodafone Kabel Deutschland
+385,16,prysm,DE,Vodafone Kabel Deutschland
+386,16,prysm,DE,Vodafone Kabel Deutschland
+387,16,lighthouse,DE,Vodafone
+388,16,teku,US,Ting Fiber Inc.
+389,16,lighthouse,GB,Virgin Media Limited
+390,17,prysm,KR,SK Broadband Co Ltd
+391,17,prysm,KR,SK Broadband Co Ltd
+392,17,prysm,KR,SK Broadband Co Ltd
+393,17,lighthouse,US,Comcast Cable Communications LLC
+394,18,prysm,CH,green.ch ag
+395,18,lighthouse,NL,Vodafone Ziggo
+396,18,lighthouse,NL,Vodafone Ziggo
+397,20,prysm,GB,DigitalOcean LLC
+398,20,lighthouse,NO,Homebase
+399,20,lighthouse,KR,Korea Telecom
+400,20,lighthouse,US,Amazon.com Inc.
+401,20,prysm,KR,SK Broadband Co Ltd
+402,20,lodestar,NL,KPN B.V.
+403,21,prysm,US,Comcast Cable Communications LLC
+404,22,prysm,KR,SK Broadband Co Ltd
+405,22,lighthouse,CA,Rogers Communications Canada Inc.
+406,22,lighthouse,CA,Rogers Communications Canada Inc.
+407,23,lighthouse,US,Interserver Inc
+408,24,teku,NZ,Spark New Zealand Trading Ltd
+409,24,teku,NZ,Spark New Zealand Trading Ltd
+410,28,nimbus,DE,BroadbandONE
+411,28,nimbus,DE,BroadbandONE
+412,29,teku,US,AT&T Services Inc.
+413,29,teku,US,AT&T Services Inc.
+414,29,lighthouse,US,OVH SAS
+415,29,prysm,US,Comcast Cable Communications LLC
+416,30,teku,US,Charter Communications
+417,31,teku,DE,Hetzner Online GmbH
+418,31,teku,DE,Hetzner Online GmbH
+419,32,prysm,DE,Vodafone
+420,32,lighthouse,FR,OVH SAS
+421,32,lighthouse,KR,Korea Telecom
+422,32,lighthouse,AU,Launtel
+423,32,lighthouse,PT,Vodafone Portugal
+424,33,prysm,KR,SK Broadband Co Ltd
+425,33,prysm,KR,SK Broadband Co Ltd
+426,33,prysm,KR,SK Broadband Co Ltd
+427,33,prysm,KR,SK Broadband Co Ltd
+428,33,prysm,KR,SK Broadband Co Ltd
+429,33,prysm,KR,SK Broadband Co Ltd
+430,37,prysm,AU,Exetel Pty Ltd
+431,37,prysm,AU,Exetel Pty Ltd
+432,38,lighthouse,ES,RIMA (Red IP Multi Acceso)
+433,38,teku,GB,Virgin Media
+434,40,lighthouse,GB,Virgin Media Limited
+435,40,prysm,GB,Virgin Media Limited
+436,44,lighthouse,CH,iWay AG
+437,46,prysm,DE,Contabo GmbH
+438,49,nimbus,KR,Kctv Jeju Broadcasting
+439,49,nimbus,KR,Kctv Jeju Broadcasting
+440,49,nimbus,KR,Kctv Jeju Broadcasting
+441,49,nimbus,KR,Kctv Jeju Broadcasting
+442,50,teku,KR,Korea Telecom
+443,50,prysm,US,CenturyLink Communications
+444,50,lodestar,FR,Societe Francaise Du Radiotelephone - SFR SA
+445,50,lodestar,FR,Societe Francaise Du Radiotelephone - SFR SA
+446,50,nimbus,FI,DNA Oyj
+447,50,nimbus,FI,DNA Oyj
+448,56,nimbus,ZA,Cool Ideas Service Provider (Pty) Ltd
+449,56,teku,ZA,Cool Ideas Service Provider (Pty) Ltd
+450,60,lighthouse,TW,Chunghwa Telecom Co. Ltd.
+451,60,lighthouse,TW,Chunghwa Telecom Co. Ltd.
+452,60,lighthouse,TW,Chunghwa Telecom Co. Ltd.
+453,62,prysm,US,Cogent Communications
+454,63,lighthouse,US,Namecheap Inc.
+455,64,grandine,GB,DigitalOcean LLC
+456,66,nimbus,US,Charles River Operation
+457,74,teku,US,Charter Communications
+458,74,prysm,US,Charter Communications
+459,74,teku,US,Charter Communications
+460,78,prysm,AT,Magenta Telekom
+461,78,prysm,AT,Magenta Telekom
+462,78,prysm,AT,Magenta Telekom
+463,79,prysm,DE,Microsoft Corporation
+464,91,prysm,DE,netcup GmbH
+465,95,prysm,US,Comcast Cable Communications LLC
+466,95,lighthouse,US,Comcast Cable Communications LLC
+467,100,prysm,US,HIVELOCITY Inc.
+468,100,lighthouse,CA,OVH SAS
+469,144,lighthouse,CA,OVH SAS
+470,167,prysm,JP,Amazon Technologies Inc.
+471,167,prysm,JP,Amazon Technologies Inc.
+472,200,prysm,US,AT&T Services Inc.
+473,200,nimbus,US,AT&T Services Inc.
+474,200,prysm,JP,Amazon.com Inc.
+475,323,nimbus,NL,Global Layer network
+476,334,grandine,HK,Google LLC
+477,340,prysm,HK,PCCW IMS Limited
+478,500,prysm,DE,The Constant Company LLC
+479,662,teku,FI,Hetzner Online GmbH
+480,1167,teku,CH,Microsoft Corporation
+481,1308,teku,DE,Equinix (EMEA) Acquisition Enterprises B.V.
+482,1308,nimbus,DE,Equinix (EMEA) Acquisition Enterprises B.V.
+483,1501,teku,CH,Microsoft Corporation
+484,1598,lighthouse,DE,Hetzner Online GmbH
+485,2045,teku,CH,Microsoft Corporation
+486,3238,lighthouse,US,Microsoft Corporation

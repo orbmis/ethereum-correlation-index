@@ -4,6 +4,7 @@ import json
 from modules.transform import transform_data
 from modules.collate import collate_data
 from modules.miga_labs_correlations import analyze_data
+from modules.miga_labs_correlations import calculate_correlation_index
 from modules.node_operators_HHI import analyze_node_operators_HHI
 from modules.staking_pools_HHI import analyze_staking_pools_HHI
 from modules.operators_vs_clients import collate_operators_vs_clients
@@ -29,7 +30,17 @@ def collate():
 
 def analyze_nodes():
     _, _, _, input_filename = get_filenames(data_folder, "data")
-    analyze_data(input_filename)
+    analyze_data(input_filename, True)
+
+
+def analyze_nodes_with_validators():
+    _, _, _, input_filename = get_filenames(data_folder, "armiarma_nodes")
+    analyze_data(input_filename, False)
+
+
+def analyze_nodes_HHI():
+    _, _, _, input_filename = get_filenames(data_folder, "armiarma_nodes")
+    calculate_correlation_index(input_filename)
 
 
 def analyze_node_operators():
@@ -99,6 +110,8 @@ def main():
             "operators-vs-clients",
             "operators-vs-pools",
             "operators-vs-relays",
+            "analyze_nodes_HHI",
+            "analyze_nodes_with_validators",
             "run-analysis",
         ],
         help="Choose which script to run.",
@@ -116,6 +129,8 @@ def main():
         "operators-vs-pools": operator_vs_pools,
         "operators-vs-relays": operator_vs_relays,
         "analyze-nodes": analyze_nodes,
+        "analyze_nodes_HHI": analyze_nodes_HHI,
+        "analyze_nodes_with_validators": analyze_nodes_with_validators,
     }
 
     command_list = list(commands.values())

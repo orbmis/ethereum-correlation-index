@@ -123,7 +123,43 @@ def cramers_v(table):
     return (phi2corr / min((kcorr - 1), (rcorr - 1))) ** 0.5
 
 
-def analyze_data(file_path="data.csv"):
+def calculate_correlation_index(filename):
+    # Read the data from the CSV file
+    data = pd.read_csv(filename)
+
+    # ths is the total number of validators (as per beaconcha.in)
+    total_number_validators = 938188
+
+    # Initialize the correlation index
+    correlation_index = 0
+
+    # Iterate over each pair of entities
+    for i in range(len(data)):
+        for j in range(i+1, len(data)):
+            # Calculate the correlation factor rho_ij
+            rho_ij = 1
+            if data.loc[i, 'client_name'] == data.loc[j, 'client_name']:
+                rho_ij += 1
+            if data.loc[i, 'country_code'] == data.loc[j, 'country_code']:
+                rho_ij += 1
+            if data.loc[i, 'ISP_alias'] == data.loc[j, 'ISP_alias']:
+                rho_ij += 1
+
+            # calculate respective market shares
+            market_share_i = data.loc[i, 'validators_count'] / total_number_validators
+            market_share_j = data.loc[j, 'validators_count'] / total_number_validators
+
+            # Update the correlation index
+            correlation_index += market_share_i * market_share_j * rho_ij
+
+    # Multiply by 100 to get the final index
+    correlation_index *= 100
+
+    print("Correlation Index:", correlation_index)
+
+    return correlation_index
+
+def analyze_data(file_path="data.csv", calculate_hamming_weights=True):
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
 
@@ -159,9 +195,12 @@ def analyze_data(file_path="data.csv"):
     print("=" * 53)
     print("\n")
 
+    if not calculate_hamming_weights:
+        return
+
     attributes_to_compare = ["country_code", "client_name", "isp_alias", "att_subnets"]
 
-    print("Calcualting Hamming weights across each attribute . . .\n")
+    print("Calculating Hamming weights across each attribute . . .\n")
 
     resulting_hamming_weights = get_hamming(df, attributes_to_compare)
 
