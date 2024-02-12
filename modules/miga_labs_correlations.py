@@ -137,25 +137,25 @@ def calculate_correlation_index(filename):
     for i in range(len(data)):
         for j in range(i+1, len(data)):
             # Calculate the correlation factor rho_ij
-            rho_ij = 1
+            c_ij = 0
             if data.loc[i, 'client_name'] == data.loc[j, 'client_name']:
-                rho_ij += (1 / 3)
+                c_ij += (1 / 3)
             if data.loc[i, 'country_code'] == data.loc[j, 'country_code']:
-                rho_ij += (1 / 3)
+                c_ij += (1 / 3)
             if data.loc[i, 'ISP_alias'] == data.loc[j, 'ISP_alias']:
-                rho_ij += (1 / 3)
+                c_ij += (1 / 3)
 
             # calculate respective market shares
             market_share_i = data.loc[i, 'validators_count'] / total_number_validators
             market_share_j = data.loc[j, 'validators_count'] / total_number_validators
 
             # Update the correlation index
-            correlation_index += market_share_i * market_share_j * rho_ij
+            correlation_index += market_share_i * market_share_j * c_ij
 
     # Multiply by 100 to get the final index
     correlation_index *= 100
 
-    print("Correlation Index for nodes:", correlation_index)
+    print("Correlation Index (modified HHI) for nodes:", correlation_index)
 
     return correlation_index
 
@@ -210,7 +210,7 @@ def analyze_data(file_path="data.csv", calculate_hamming_weights=True, use_alter
     hamming_csv = array_to_csv_string(resulting_hamming_weights)
 
     # Print or use resulting_hamming_weights as needed
-    if use_alternative_attributes:
+    # if use_alternative_attributes:
         # print(hamming_csv)
 
     print("\n")
