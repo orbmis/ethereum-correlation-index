@@ -122,44 +122,73 @@ def cramers_v(table):
     kcorr = k - ((k - 1) ** 2) / (n - 1)
     return (phi2corr / min((kcorr - 1), (rcorr - 1))) ** 0.5
 
+def calculate_standard_hhi_of_nodes(filename):
+    print("\n")
+    print("\nCalculating STANDARD HHI for nodes in dataset C:\n")
+
+    # Read the data from the CSV file
+    data = pd.read_csv(filename)
+
+    total_number_validators = 666425
+
+    # initiate HHI at 0
+    hhi = 0.0
+
+    for i in range(len(data)):
+        market_share = (data.loc[i, 'no_validators_c'] / total_number_validators) * 100
+        hhi += market_share**2
+
+    print("\nStandard HHI for nodes in dataset C:", hhi)
+    print("\n")
+
+    return hhi
 
 def calculate_correlation_index(filename):
+    print("\n")
+    print("\nCalculating modified HHI for nodes in dataset C\n")
+
     # Read the data from the CSV file
     data = pd.read_csv(filename)
 
     # ths is the total number of validators (as per beaconcha.in)
-    total_number_validators = 938188
+    total_number_validators = 666425
 
     # Initialize the correlation index
     correlation_index = 0
 
+    # Calculate total number of iterations
+    total_iterations = (len(data) * (len(data) - 1)) // 2
+
     # Iterate over each pair of entities
-    for i in range(len(data)):
-        for j in range(i+1, len(data)):
-            # Calculate the correlation factor rho_ij
-            c_ij = 0
-            if data.loc[i, 'client_name'] == data.loc[j, 'client_name']:
-                c_ij += (1 / 3)
-            if data.loc[i, 'country_code'] == data.loc[j, 'country_code']:
-                c_ij += (1 / 3)
-            if data.loc[i, 'ISP_alias'] == data.loc[j, 'ISP_alias']:
-                c_ij += (1 / 3)
+    with tqdm(total=total_iterations) as pbar:
+        for i in range(len(data)):
+            for j in range(i+1, len(data)):
+                # Calculate the correlation factor c_ij
+                c_ij = 0
 
-            # calculate respective market shares
-            market_share_i = data.loc[i, 'validators_count'] / total_number_validators
-            market_share_j = data.loc[j, 'validators_count'] / total_number_validators
+                if data.loc[i, 'client_name'] == data.loc[j, 'client_name']:
+                    c_ij += (1 / 3)
+                if data.loc[i, 'country_name'] == data.loc[j, 'country_name']:
+                    c_ij += (1 / 3)
+                if data.loc[i, 'ISP_alias'] == data.loc[j, 'ISP_alias']:
+                    c_ij += (1 / 3)
 
-            # Update the correlation index
-            correlation_index += market_share_i * market_share_j * c_ij
+                # calculate respective market shares
+                market_share_i = (data.loc[i, 'no_validators_e'] / total_number_validators) * 100
+                market_share_j = (data.loc[j, 'no_validators_e'] / total_number_validators) * 100
 
-    # Multiply by 100 to get the final index
-    correlation_index *= 100
+                # Update the correlation index
+                correlation_index += market_share_i * market_share_j * c_ij
 
-    print("Correlation Index (modified HHI) for nodes:", correlation_index)
+                pbar.update(1)
+
+    print("Correlation Index (modified HHI) for nodes in Dataset C:", correlation_index)
+
+    print("\n")
 
     return correlation_index
 
-def analyze_data(file_path="data.csv", calculate_hamming_weights=True, use_alternative_attributes=False):
+def analyze_data(file_path="data.csv"):
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
 
@@ -195,8 +224,10 @@ def analyze_data(file_path="data.csv", calculate_hamming_weights=True, use_alter
     print("=" * 53)
     print("\n")
 
-    if not calculate_hamming_weights:
-        return
+
+def get_hammings(file_path="data.csv", use_alternative_attributes=True):
+    # Read the CSV file into a pandas DataFrame
+    df = pd.read_csv(file_path)
 
     attributes_to_compare = ["country_code", "client_name", "isp_alias", "att_subnets"]
 

@@ -239,12 +239,12 @@ def calculate_modified_hhi(data):
                 clients_correlation += min(matrix[i][3][client], matrix[j][3][client])
 
             # comment out these lines to remove baseline correction
-            relays_correlation = relays_correlation - relays_baseline if relays_correlation > relays_baseline else 0
-            clients_correlation = clients_correlation - clients_baseline if clients_correlation > clients_baseline else 0
+            # relays_correlation = relays_correlation - relays_baseline if relays_correlation > relays_baseline else 0
+            # clients_correlation = clients_correlation - clients_baseline if clients_correlation > clients_baseline else 0
 
             c_ij = relays_correlation + clients_correlation
 
-            row_correlation_value += ((n_i * n_j) * c_ij) * 100
+            row_correlation_value += ((n_i * n_j) * c_ij) * (100 / 2)
 
         modified_hhi += row_correlation_value
 

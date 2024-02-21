@@ -292,13 +292,13 @@ def calculate_modified_hhi(data):
                 )
 
             # comment out these lines to remove baseline correction
-            relays_correlation = relays_correlation - relays_baseline if relays_correlation > relays_baseline else 0
-            clients_correlation = clients_correlation - clients_baseline if clients_correlation > clients_baseline else 0
-            operators_correlation = operators_correlation - operators_baseline if operators_correlation > operators_baseline else 0
+            # relays_correlation = relays_correlation - relays_baseline if relays_correlation > relays_baseline else 0
+            # clients_correlation = clients_correlation - clients_baseline if clients_correlation > clients_baseline else 0
+            # operators_correlation = operators_correlation - operators_baseline if operators_correlation > operators_baseline else 0
 
             c_ij = relays_correlation + clients_correlation + operators_correlation
 
-            row_correlation_value += ((n_i * n_j) * c_ij) * 100
+            row_correlation_value += ((n_i * n_j) * c_ij) * (100 / 3)
             shhi_value += (n_i + n_i) * c_ij
 
         modified_hhi += row_correlation_value

@@ -4,7 +4,9 @@ import json
 from modules.transform import transform_data
 from modules.collate import collate_data
 from modules.miga_labs_correlations import analyze_data
+from modules.miga_labs_correlations import get_hammings
 from modules.miga_labs_correlations import calculate_correlation_index
+from modules.miga_labs_correlations import calculate_standard_hhi_of_nodes
 from modules.node_operators_HHI import analyze_node_operators_HHI
 from modules.staking_pools_HHI import analyze_staking_pools_HHI
 from modules.operators_vs_clients import collate_operators_vs_clients
@@ -30,17 +32,22 @@ def collate():
 
 def analyze_nodes():
     _, _, _, input_filename = get_filenames(data_folder, "data")
-    analyze_data(input_filename, True)
+    analyze_data(input_filename)
 
 
-def analyze_nodes_with_validators():
+def calculate_hamming_weights():
     _, _, _, input_filename = get_filenames(data_folder, "armiarma_nodes")
-    analyze_data(input_filename, True, True)
+    get_hammings(input_filename)
 
 
 def analyze_nodes_HHI():
-    _, _, _, input_filename = get_filenames(data_folder, "armiarma_nodes")
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_c")
     calculate_correlation_index(input_filename)
+
+
+def calculate_nodes_hhi():
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_c")
+    calculate_standard_hhi_of_nodes(input_filename)
 
 
 def analyze_node_operators():
@@ -111,7 +118,8 @@ def main():
             "operators-vs-pools",
             "operators-vs-relays",
             "analyze_nodes_HHI",
-            "analyze_nodes_with_validators",
+            "calculate_nodes_hhi",
+            "calculate_hamming_weights",
             "run-analysis",
         ],
         help="Choose which script to run.",
@@ -129,13 +137,17 @@ def main():
         "operators-vs-pools": operator_vs_pools,
         "operators-vs-relays": operator_vs_relays,
         "analyze-nodes": analyze_nodes,
-        "analyze_nodes_HHI": analyze_nodes_HHI,
-        "analyze_nodes_with_validators": analyze_nodes_with_validators,
+        "calculate_nodes_hhi": calculate_nodes_hhi,
+        "calculate_hamming_weights": calculate_hamming_weights,
     }
 
     command_list = list(commands.values())
 
     selected_command = commands.get(args.command)
+
+    if (args.command == "analyze_nodes_HHI"):
+        analyze_nodes_HHI()
+        return
 
     if args.command == "run-analysis":
         for method in command_list:
