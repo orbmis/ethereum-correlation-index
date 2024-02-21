@@ -26,37 +26,37 @@ def transform():
 
 def collate():
     input_filename = f"{data_folder}/data.json"
-    output_filename = f"{data_folder}/collated.json"
+    output_filename = f"{data_folder}/dataset_a.json"
     collate_data(input_filename, output_filename)
 
 
 def analyze_nodes():
-    _, _, _, input_filename = get_filenames(data_folder, "data")
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_b")
     analyze_data(input_filename)
 
 
 def calculate_hamming_weights():
-    _, _, _, input_filename = get_filenames(data_folder, "armiarma_nodes")
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_c")
     get_hammings(input_filename)
 
 
 def analyze_nodes_HHI():
-    _, _, _, input_filename = get_filenames(data_folder, "dataset_c")
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_d")
     calculate_correlation_index(input_filename)
 
 
 def calculate_nodes_hhi():
-    _, _, _, input_filename = get_filenames(data_folder, "dataset_c")
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_d")
     calculate_standard_hhi_of_nodes(input_filename)
 
 
 def analyze_node_operators():
-    input_filename, _, _, _ = get_filenames(data_folder, "collated")
+    input_filename, _, _, _ = get_filenames(data_folder, "dataset_a")
     analyze_node_operators_HHI(input_filename)
 
 
 def analyze_staking_pools():
-    input_filename, _, _, _ = get_filenames(data_folder, "collated")
+    input_filename, _, _, _ = get_filenames(data_folder, "dataset_a")
     analyze_staking_pools_HHI(input_filename)
 
 
@@ -64,7 +64,7 @@ def operator_vs_clients():
     _, _, json_output_file, csv_output_file = get_filenames(
         data_folder, "operators_vs_clients"
     )
-    input_file = f"{data_folder}/collated.json"
+    input_file = f"{data_folder}/dataset_a.json"
 
     collate_operators_vs_clients(input_file, json_output_file, csv_output_file)
 
@@ -77,7 +77,7 @@ def operator_vs_pools():
     input_file, _, json_output_file, csv_output_file = get_filenames(
         data_folder, "operators_vs_pools"
     )
-    input_file = f"{data_folder}/collated.json"
+    input_file = f"{data_folder}/dataset_a.json"
 
     collate_operators_vs_pools(input_file, json_output_file, csv_output_file)
 
@@ -86,7 +86,7 @@ def operator_vs_relays():
     input_file, _, json_output_file, csv_output_file = get_filenames(
         data_folder, "operators_vs_relays"
     )
-    input_file = f"{data_folder}/collated.json"
+    input_file = f"{data_folder}/dataset_a.json"
 
     collate_operators_vs_relays(input_file, json_output_file, csv_output_file)
 
