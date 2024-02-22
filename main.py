@@ -31,7 +31,7 @@ def collate():
 
 
 def analyze_nodes():
-    _, _, _, input_filename = get_filenames(data_folder, "dataset_b")
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_d_cleaned")
     analyze_data(input_filename)
 
 
