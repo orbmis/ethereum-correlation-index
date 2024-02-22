@@ -106,7 +106,7 @@ def get_hamming(df_full, attributes):
 
     # iterate over array and add the sum of all "hamming weights as percentage of total records"
     for k in range(len(df) - 1):
-        matrix[k][5] = sum(matrix[k][1:5]) # / len(df)
+        matrix[k][5] = sum(matrix[k][1:6]) # / len(df)
 
     return matrix
 
@@ -229,7 +229,7 @@ def get_hammings(file_path="data.csv", use_alternative_attributes=True):
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
 
-    attributes_to_compare = ["country_code", "client_name", "isp_alias", "att_subnets"]
+    attributes_to_compare = ["att_subnets","country_name","ISP_alias","client_name","validators_count"]
 
     if use_alternative_attributes:
         attributes_to_compare = ["validators_count","client_name","country_code","ISP_alias"]

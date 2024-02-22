@@ -36,8 +36,8 @@ def analyze_nodes():
 
 
 def calculate_hamming_weights():
-    _, _, _, input_filename = get_filenames(data_folder, "dataset_c")
-    get_hammings(input_filename)
+    _, _, _, input_filename = get_filenames(data_folder, "dataset_d_cleaned")
+    get_hammings(input_filename, False)
 
 
 def analyze_nodes_HHI():

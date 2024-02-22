@@ -1,4 +1,4 @@
-node_id,att_subnets,country_name,ISP_alias,client_name,validators_count
+index,att_subnets,country_name,ISP_alias,client_name,validators_count
 node10002,1,Netherlands,KPN Network,prysm,1
 node10005,1,Germany,Hetzner,lodestar,1
 node1002,1,Singapore,Viewqwest Pte ,prysm,1
